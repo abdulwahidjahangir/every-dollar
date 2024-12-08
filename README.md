@@ -38,7 +38,7 @@
 10. **Error Handling**: 
     - Clear error messages are returned in case of invalid inputs or failed operations, such as failed authentication or invalid payment IDs.
 
-## User Controller
+## User Endpoints
 
 1. **Sign In Request**  
    - **Endpoint**: POST /api/public/sign-in  
@@ -189,7 +189,7 @@
      }
      ```
 
-## Category Controller
+## Category Endpoints
 
 1. **GET /api/user/categories**  
    - **Request Parameters**:
@@ -241,7 +241,7 @@
      "Category successfully deleted"
      ```
 
-## Expense Controller
+## Expense Endpoints
 
 1. **GET /api/user/expenses**  
    - **Request Parameters**:
@@ -315,7 +315,7 @@
      }
      ```
 
-## Payment Controller
+## Payment Endpoints
 
 1. **GET /api/user/get-payment-intent**  
    - **Response**:
