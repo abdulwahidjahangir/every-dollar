@@ -323,6 +323,19 @@ The **Every-Dollar** provides comprehensive functionality for managing personal 
      "Thanks for your donation"
      ```
 
+2. **POST /api/user/get-all-my-payments**  
+   - **Response**:
+     ```json
+     [
+      {
+        "paymentIntent": "payment-id",
+        "hasPaid": "has-paid",
+        "amount": "amount",
+        "paidAt": "paid-date"
+      }
+     ]
+     ```
+
 ## CSRF Token Endpoint
 
 1. **GET /api/public/csrf-token**  

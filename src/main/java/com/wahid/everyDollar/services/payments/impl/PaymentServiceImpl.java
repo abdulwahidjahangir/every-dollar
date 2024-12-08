@@ -84,6 +84,12 @@ public class PaymentServiceImpl implements PaymentService {
         }
     }
 
+    @Override
+    public List<Payment> getPaymentHistory(String userEmail) {
+        User user = userService.getUser(userEmail);
+        return paymentRepository.paymentHistory(user.getId());
+    }
+
     private PaymentIntent createPaymentIntent(String userEmail, BigDecimal amount) throws StripeException {
         List<String> paymentMethodsType = Collections.singletonList("card");
 
