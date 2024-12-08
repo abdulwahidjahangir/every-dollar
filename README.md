@@ -23,6 +23,10 @@ The **Every-Dollar** provides comprehensive functionality for managing personal 
 ## 5. Error Handling
 - **Custom error handling** is in place to manage errors gracefully, ensuring that users receive informative messages for unexpected situations and issues.
 
+---
+---
+
+# API Endpoints
 
 ## User Endpoints
 
