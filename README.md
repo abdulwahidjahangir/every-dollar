@@ -1,42 +1,28 @@
 # Every-Dollar
 
-**Every-Dollar** is an expense tracking and management application designed to help users efficiently manage their finances.
+The **Every-Dollar** provides comprehensive functionality for managing personal expenses efficiently. Below are the key features and implementations:
 
-## Features
+## 1. User Authentication
+- User registration and login are handled using **JWT (JSON Web Token)** for secure authentication.
+- The registration process includes **email verification** to confirm user identity.
+- Users can also perform **password reset** operations for account security.
 
-1. **User Authentication & Registration**: 
-   - Users can sign in via email and password, receiving a JWT token upon successful login. 
-   - Users can sign up with first name, last name, email, and password, receiving a verification token.
+## 2. Category Management
+- Users can manage their expenses by organizing them into categories.
+- Each category supports up to **10 subcategories** to allow detailed classification of expenses.
+- Categories can have a **maximum depth of 3 levels**, providing flexibility in organizing expenses.
+- Users can either use the **default categories** provided by the system or create **custom categories** based on their needs.
 
-2. **Account Verification**: 
-   - Users can verify their account using a verification token sent via email. 
-   - If needed, users can request a new verification email.
+## 3. Expense Management
+- Users can perform **CRUD (Create, Read, Update, Delete)** operations to manage their expenses.
+- Each expense is linked to a specific category, ensuring that all expenses are organized effectively.
 
-3. **Password Management**: 
-   - Users can reset their password using a token sent to their email and update their password after signing in.
+## 4. Security Measures
+- **CSRF protection** has been implemented to safeguard the application from cross-site request forgery attacks.
 
-4. **User Information Management**: 
-   - Users can view and update their account information, including first name, last name, and email.
+## 5. Error Handling
+- **Custom error handling** is in place to manage errors gracefully, ensuring that users receive informative messages for unexpected situations and issues.
 
-5. **Category Management**: 
-   - Users can manage expense categories, including creating, updating, and deleting categories. 
-   - Categories can be filtered by date range and parent category.
-
-6. **Expense Management**: 
-   - Users can create, update, delete, and retrieve expenses. 
-   - Expenses can be filtered by category, date range, and sorted by various fields.
-
-7. **Pagination & Sorting**: 
-   - For managing large datasets, users can paginate and sort expenses by various fields.
-
-8. **Payment Integration**: 
-   - Users can retrieve a payment intent (client secret) for processing payments and verify payments using a payment ID.
-
-9. **CSRF Protection**: 
-   - A CSRF token can be retrieved via an endpoint to protect against cross-site request forgery attacks, ensuring safe data-modifying requests.
-
-10. **Error Handling**: 
-    - Clear error messages are returned in case of invalid inputs or failed operations, such as failed authentication or invalid payment IDs.
 
 ## User Endpoints
 
