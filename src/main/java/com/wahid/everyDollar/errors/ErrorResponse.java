@@ -1,0 +1,19 @@
+package com.wahid.everyDollar.errors;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class ErrorResponse {
+
+    public int status;
+    public String message;
+    public LocalDateTime localDateTime;
+}
